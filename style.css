@@ -1,5 +1,5 @@
 /* 
-  #A49DFF purple
+  717CFF
   #2F2F2F dark grey
   #7D7D7D light grey
 */
@@ -44,6 +44,10 @@ main{
 /* NAV */
 .navbar {
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  background: rgba(255,255,255,1);
 }
 
 #logo{
@@ -144,6 +148,7 @@ a.button4{
   text-align: center;
   line-height: 1em;
   margin-top: 2.5rem;
+  letter-spacing:0.2rem;
 }
 a.button4:hover{
   border-color: rgba(255,255,255,1);
@@ -173,6 +178,81 @@ a.button4:hover{
 }
 /* uni */
 
+/* news */
+.news{
+  background-color:#FAFAFA;
+  height:120vh;
+}
+.news-text{
+  position: relative;
+  top:6%;
+  text-align: center;
+  font-family: open sans;
+}
+.news-text > h3{
+  color: #2F2F2F;
+  font-size: 2.5rem;
+}
+.news-text > p{
+  color: #2F2F2F;
+  font-size: 1.3rem;
+  margin-top:2rem;
+}
+.container {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+  width: 20rem;
+  background: white;
+  border: 1px solid transparent;
+  padding-bottom: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 6rem;
+  margin-left:1.5rem;
+  margin-right:1.5rem;
+  transition: 0.3s;
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.4);
+}
+
+.card-header > img{
+  position: relative;
+  width: 100%;
+}
+
+.card-body {
+  padding: 2rem 2rem;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: initial;
+  box-shadow: initial;
+}
+
+.join{
+  position: relative;
+  margin:auto !important;
+}
+.date{
+  font-size: 0.8rem;
+  font-weight: lighter;
+  color:#7D7D7D ;
+  margin-bottom:1rem;
+}
+/* news */
+
 .intro{
   background: #F5FAFD;
   position:fixed;
@@ -186,7 +266,7 @@ a.button4:hover{
 }
 
 .slider{
-  background: #A49DFF;
+  background: #717CFF;
   position:fixed;
   top: 0;
   left: 0;
@@ -216,6 +296,9 @@ a.button4:hover{
 
 
 @media (max-width: 1200px){
+  .card {
+    width: 40%;
+  }
   .purple-cercle{
     height: 55vh;
   }
@@ -239,6 +322,13 @@ a.button4:hover{
 }
 
 @media (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+
+  .card {
+    width: 80%;
+  }
   .navbar {
       flex-direction: column;
       align-items: flex-start;
