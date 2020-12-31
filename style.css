@@ -1,0 +1,306 @@
+/* 
+  #A49DFF purple
+  #2F2F2F dark grey
+  #7D7D7D light grey
+*/
+
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:none;
+}
+
+main{
+  font-family: "Heebo";
+}
+
+
+.hero{
+  width: 100%; 
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  color:#2F2F2F;
+  background-size: fit-content;
+}
+
+.corner-images{
+  position:absolute;
+  right: 0;
+  bottom: 0;
+}
+.purple-cercle{
+  height: 65vh;
+  display: block;
+}
+.woman{
+  position: absolute;
+  right: 13%;
+  height: 120%;
+}
+/* NAV */
+.navbar {
+  display: flex;
+}
+
+#logo{
+  width: 9.5rem;
+  height: auto;
+  position:relative;
+  left:10%;
+  transform: translateX(-10%);
+}
+.navbar-links {
+  height: 100%;
+  position:relative;
+  left:55%;
+  transform: translateX(-50%);
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: #2F2F2F;
+  padding: 1rem;
+}
+
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #2F2F2F;
+  border-radius: 10px;
+}
+/* NAV */
+
+
+
+/* bgtext */
+.big-text{
+  font-size: 3.5rem;
+  text-align: left;
+  letter-spacing: 4px;
+  font-family: Open Sans;
+}
+.bg-text{
+  position: absolute;
+  width: 50%;
+  top:40%;
+  left:15%;
+  transform: translate(-15%,-40%);
+  text-align: left;
+}
+.small-text{
+  margin-top:1rem;
+  font-size: 1.3rem;
+  text-align: left;
+  letter-spacing: 1.2px;
+  font-family: Open Sans;
+  color:#7D7D7D;
+}
+
+a.button4{
+  width: 15rem;
+  height: 4rem;
+  padding:0.3em 1.2em;
+  margin:0 0.1em 0.1em 0;
+  border:0.16em solid rgba(255,255,255,0);
+  border-radius:0.5em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:Open sans;
+  font-weight:700;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s;
+  text-transform: 50% 50%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.25rem;
+  text-align: center;
+  line-height: 1em;
+  margin-top: 2.5rem;
+}
+a.button4:hover{
+  border-color: rgba(255,255,255,1);
+}
+
+/* bgtext */
+/* uni */
+
+.universities{
+  background-color:#FAFAFA;
+  height:60vh;
+}
+.glider-contain{
+  position:relative;
+  top:30%;
+}
+.dots{
+  margin:4.5rem;
+}
+.universities > p{
+  text-align: center;
+  position: relative;
+  top:10%;
+  font-size: 1.5rem;
+  color:#7D7D7D;
+  letter-spacing: 0.2rem;
+}
+/* uni */
+
+.intro{
+  background: #F5FAFD;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider{
+  background: #A49DFF;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.intro-logo{
+  width: 20rem;
+  height: auto;
+}
+
+.hide{
+  background-color:#F5FAFD;
+  overflow: hidden;
+}
+
+.hide img{
+  transform: translateY(110%);
+}
+
+
+
+
+
+
+
+@media (max-width: 1200px){
+  .purple-cercle{
+    height: 55vh;
+  }
+  .woman{
+    right: 16%;
+    height: 120%;
+  }
+  .big-text{
+    font-size: 2.5rem;
+  }
+  .navbar-links {
+    left:45%;
+    transform: translateX(-45%);
+  }
+  .small-text{
+    font-size: 1rem;
+  }
+  .universities{
+    height:50vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .intro-logo{
+    width: 15rem;
+  }
+  .big-text{
+    font-size: 1.8rem;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+
+  .big-text{
+    font-size: 1.7rem;
+    letter-spacing:1px;
+  }
+  .small-text{
+    font-size: 1rem;
+  }
+  .purple-cercle{
+    height: 35vh;
+  }
+  .woman{
+    right: 16%;
+    height: 100%;
+  }
+  a.button4{
+    width:10rem;
+    height: 3.5rem;
+    padding-top: 1rem;
+    font-weight:400;
+    margin-top: 3rem;
+  }
+  .universities{
+    height:40vh;
+  }
+  .universities > p{
+    font-size: 1rem;
+  }
+}
