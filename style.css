@@ -162,8 +162,7 @@ a.button4:hover{
   height:60vh;
 }
 .glider-contain{
-  position:relative;
-  top:30%;
+  top:20%;
 }
 .dots{
   margin:4.5rem;
@@ -252,6 +251,44 @@ a.button4:hover{
   margin-bottom:1rem;
 }
 /* news */
+.countries{
+  background-color:#FAFAFA;
+  height:90vh;
+}
+.countries-text{
+  position: relative;
+  top:6%;
+  text-align: center;
+  font-family: open sans;
+}
+.countries-text > h3{
+  color: #2F2F2F;
+  font-size: 2.5rem;
+}
+.countries-text > p{
+  color: #2F2F2F;
+  font-size: 1.3rem;
+  margin-top:2rem;
+}
+.dots2{
+  margin:4.5rem;
+}
+.country{
+  text-align: left;
+  margin-left: 4rem;
+}
+.country>h3{
+  margin-top:1.5rem;
+  margin-bottom:1rem;
+  color:#2F2F2F;
+}
+.country > p{
+  color:#7D7D7D;
+}
+.glider2, .glider {
+  margin: 4rem 6rem;
+}
+/* country */
 
 .intro{
   background: #F5FAFD;
