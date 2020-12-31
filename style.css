@@ -180,7 +180,7 @@ a.button4:hover{
 /* news */
 .news{
   background-color:#FAFAFA;
-  height:120vh;
+  height:100%;
 }
 .news-text{
   position: relative;
@@ -207,6 +207,7 @@ a.button4:hover{
   flex-direction: row;
   justify-content: space-around;
   flex-flow: wrap;
+  align-content: flex-start
 }
 
 .card {
@@ -221,10 +222,11 @@ a.button4:hover{
   transition: 0.3s;
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
 .card-header > img{
-  position: relative;
+  position: static;
   width: 100%;
 }
 
@@ -251,12 +253,14 @@ a.button4:hover{
   margin-bottom:1rem;
 }
 /* news */
+/* country */
 .countries{
   background-color:#FAFAFA;
   height:90vh;
 }
 .countries-text{
-  position: relative;
+  padding-top:5rem;
+  position: static;
   top:6%;
   text-align: center;
   font-family: open sans;
@@ -281,12 +285,14 @@ a.button4:hover{
   margin-top:1.5rem;
   margin-bottom:1rem;
   color:#2F2F2F;
+  font-size: 1.6rem;
 }
 .country > p{
   color:#7D7D7D;
+  font-size: 1rem;
 }
 .glider2, .glider {
-  margin: 4rem 6rem;
+  margin: 4rem 5%;
 }
 /* country */
 
@@ -333,9 +339,6 @@ a.button4:hover{
 
 
 @media (max-width: 1200px){
-  .card {
-    width: 40%;
-  }
   .purple-cercle{
     height: 55vh;
   }
@@ -356,6 +359,18 @@ a.button4:hover{
   .universities{
     height:50vh;
   }
+  .countries-text > h3{
+    font-size: 2.3rem;
+  }
+  .countries-text > p{
+    font-size: 1rem;
+  }
+  .country>h3{
+    font-size: 1.4rem;
+  }
+  .country > p{
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -363,9 +378,6 @@ a.button4:hover{
     width: 100%;
   }
 
-  .card {
-    width: 80%;
-  }
   .navbar {
       flex-direction: column;
       align-items: flex-start;
@@ -429,5 +441,21 @@ a.button4:hover{
   }
   .universities > p{
     font-size: 1rem;
+  }
+  .countries-text > h3{
+    font-size: 2.0rem;
+  }
+  .countries-text > p{
+    font-size: 0.8rem;
+  }
+  .country>h3{
+    margin-top:1.5rem;
+    margin-bottom:1rem;
+    color:#2F2F2F;
+    font-size: 1.2rem;
+  }
+  .country > p{
+    color:#7D7D7D;
+    font-size: 0.8rem;
   }
 }
