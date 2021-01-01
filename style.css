@@ -176,6 +176,100 @@ a.button4:hover{
   letter-spacing: 0.2rem;
 }
 /* uni */
+/* services */
+.container1 {
+  width: 90%;
+  margin: 50px auto;
+}
+.services{
+  background-color:white;
+  height:120vh;
+}
+.services-text {
+  position: relative;
+  top:6%;
+  text-align: center;
+  font-family: open sans;
+}
+
+.services-text > h3{
+  color: #2F2F2F;
+  font-size: 2.5rem;
+}
+
+.services-text > p{
+  color: #2F2F2F;
+  font-size: 1.3rem;
+  margin-top:2rem;
+}
+.row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  align-content: flex-start
+}
+
+
+
+.card1 {
+  width: 20rem;
+  background: white;
+  border: 1px solid transparent;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 6rem;
+  margin-left:1.2rem;
+  margin-right:1.2rem;
+  transition: 0.3s;
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+
+.card-body1 {
+  padding: 2.5rem 2.5rem;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card1:hover {
+  transform: initial;
+  box-shadow: initial;
+  border: 3px solid #717CFF;
+  border-radius: 15px;
+}
+
+.text{
+  font-size: 1rem;
+  font-weight: lighter;
+  color:#7D7D7D ;
+  margin-top:1.2rem;
+}
+.card-body1 > p{
+  color:#2F2F2F;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.card-body1 > a{
+  display:flex;
+  align-items: center;
+  color:#717CFF;
+  margin-top: 3rem;
+  margin-bottom: -2rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.card-body1 > a >i{
+  margin-left: 1.2rem;
+}
+.card-body1 > img{
+  margin-bottom: 0.5rem;
+}
+
+/* service */
 
 /* news */
 .news{
@@ -214,11 +308,11 @@ a.button4:hover{
   width: 20rem;
   background: white;
   border: 1px solid transparent;
-  padding-bottom: 3rem;
+  padding-bottom: 0rem;
   margin-bottom: 5rem;
   margin-top: 6rem;
-  margin-left:1.5rem;
-  margin-right:1.5rem;
+  margin-left:1.2rem;
+  margin-right:1.2rem;
   transition: 0.3s;
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.4);
@@ -296,6 +390,29 @@ a.button4:hover{
 }
 /* country */
 
+
+/* footer */
+.message{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  background-color: #FAFAFA;
+  height:30vh;
+} 
+.message > h3{
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  color: #2F2F2F;
+}
+.message > .button4{
+  margin-bottom: 2.9rem;
+  width: 16rem;
+}
+/* footer */
+
+
 .intro{
   background: #F5FAFD;
   position:fixed;
@@ -370,6 +487,18 @@ a.button4:hover{
   }
   .country > p{
     font-size: 0.9rem;
+  }
+  .message > h3{
+    font-size: 6vw;
+    letter-spacing: 1.5px;
+    color: #2F2F2F;
+  }
+  .message > .button4{
+    width: 12.5rem;
+  }
+  .message {
+    flex-direction: column;
+    justify-content:center;
   }
 }
 
@@ -455,7 +584,7 @@ a.button4:hover{
     font-size: 1.2rem;
   }
   .country > p{
-    color:#7D7D7D;
     font-size: 0.8rem;
   }
+
 }
